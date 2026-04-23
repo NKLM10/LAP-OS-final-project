@@ -1,8 +1,23 @@
-=== git log --oneline --decorate -n 10 ===
-[COLLER ICI]
+6e09c88 (HEAD -> main) feat: implémentation des TODO
+d3ce9a2 (origin/main, origin/HEAD) feat : Copie du dossier du projet à compléter
+dbc8e25 Delete tp3_kali_scanner_TODO.py
+4a4bb46 feat : Copie du dossier du projet à compléter
+5b8d325 Add files via upload
+5a1980b feat : Copie du dossier du projet à compléter
+e3cad2a Initial commit
+6e09c88 Marc Laurent Nana Kouakam Thu Apr 23 16:10:58 2026 -0400 feat: implémentation des TODO
+reports/custom_20260423_145905.txt
+reports/sv_20260423_145829.txt
+reports/top100_20260423_145011.txt
+reports/top100_20260423_151215.txt
+Sur la branche main
+Votre branche est en avance sur 'origin/main' de 1 commit.
+  (utilisez "git push" pour publier vos commits locaux)
 
-=== git show --name-only --pretty=format:"%h %an %ad %s" HEAD ===
-[COLLER ICI]
+Modifications qui ne seront pas validées :
+  (utilisez "git add <fichier>..." pour mettre à jour ce qui sera validé)
+  (utilisez "git restore <fichier>..." pour annuler les modifications dans le répertoire de travail)
+	modifié :         GIT_PROOFS.txt
+	modifié :         tp3_kali_scanner_TODO.py
 
-=== git status ===
-[COLLER ICI]
+aucune modification n'a été ajoutée à la validation (utilisez "git add" ou "git commit -a")
