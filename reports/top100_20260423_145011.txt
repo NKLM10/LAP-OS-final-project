@@ -1,0 +1,6 @@
+Starting Nmap 7.98 ( https://nmap.org ) at 2026-04-23 14:50 -0400
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.02 seconds
+
+[stderr]
+::1 looks like an IPv6 target specification -- you have to use the -6 option.
+WARNING: No targets were specified, so 0 hosts scanned.
