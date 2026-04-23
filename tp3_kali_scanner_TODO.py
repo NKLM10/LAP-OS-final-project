@@ -51,16 +51,19 @@ def run_nmap(args, target):
 # --- TODOs à compléter ---
 
 def timestamp():
+    return datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
     # TODO-1: retourner un horodatage AAAAMMJJ_HHMMSS (ex: 20251112_213000)
     # Indice : datetime.datetime.now().strftime(...)
     pass
 
 def check_nmap():
+    return shutil.which("nmap") is not None
     # TODO-2: retourner True si nmap est dans le PATH, sinon False
     # Indice : shutil.which("nmap")
     pass
 
 def allowed_target(t):
+    return t in {"127.0.0.1", "localhost", "::1"}
     # TODO-3: autoriser STRICTEMENT '127.0.0.1', 'localhost' ou '::1'
     # Indice : comparer t à un ensemble de valeurs autorisées
     pass
@@ -105,6 +108,7 @@ def main():
             continue
 
         if c == "1":
+
             out = run_nmap(["--top-ports", "100"], target)
             path = save_report(out, "top100")
             print("Rapport créé :", path)
@@ -116,6 +120,10 @@ def main():
 
         elif c == "3":
             line = input("Options nmap (ex: -p 1-1024 -sV) : ").strip()
+            Options = line.split()
+            out = run_nmap(Options, target)
+            path = save_report(out, "custom")
+            print("Rapport créé :", path)
             if not line:
                 print("Options vides — annulé.")
                 continue
@@ -123,7 +131,7 @@ def main():
             #         lancer run_nmap(options, target) et sauvegarder
             #         le rapport avec save_report(out, "custom").
             #         Affichez ensuite le chemin du rapport créé.
-            print("[AVERTISSEMENT] TODO-4 non implémenté (scan personnalisé).")
+             #print("[AVERTISSEMENT] TODO-4 non implémenté (scan personnalisé).")
 
         else:
             print("Choix invalide.")
